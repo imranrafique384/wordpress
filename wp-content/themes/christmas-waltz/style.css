@@ -1,0 +1,276 @@
+/* 
+Theme Name: Christmas Waltz
+Theme URL: http://www.webloglabs.com/themes/christmas-waltz/
+Description: The Christmas Waltz Theme captures the spirit of a modern Christmas. Light blues give it a cool wintery feel, accented by the warm colors of traditional Christmas symbols such as a decorated tree, mistletoe and, of course, Santa Claus.
+Author: Weblog Labs
+Author URI: http://www.webloglabs.com/
+Version: 1.0
+Tags: blue, light, fixed-width, two-columns, right-sidebar, holiday, seasonal
+
+*/
+
+/*  Reset me  */
+
+* {margin:0;padding:0;}
+h1, h2, h3, h4 {font-weight:normal;}
+
+/*
+Basic Elements
+*/
+
+body {background-color:#CAE6EB;font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;color: #333;line-height:1.4;}
+p, ol, ul, h1, h2, h3, h4, h5, blockquote {margin-bottom:8px;}
+h1{font-size:180%;} h2{font-size:160%;} h3{font-size:140%;} h4{font-size:120%;} h5{font-size:100%;font-weight:bold;}
+blockquote{padding-left:40px;padding-right:40px;}
+.alignleft{float:left;}
+.alignright{float:right;}
+
+/*
+Links
+*/
+
+img a, a img {border: none;text-decoration: none;}
+a, a:link {color: #0E6244;text-decoration: none;}
+a:hover {color: #990000;text-decoration: underline;}
+
+/*
+Layout
+*/
+
+#header{width:960px;margin:0 auto 0 auto;background-color:#D9F3F8;overflow:hidden;}
+#container{clear:both;width:960px;margin:0 auto 0 auto;background:#CAE6EB url(images/bg-container.gif) repeat-x;}
+#content{float:left;width:660px;background:transparent;}
+#sidebar{float:right;width:300px;background:transparent;}
+#extras{clear:both;border-top:4px solid #CAE6EB;width:960px;margin:0 auto;overflow:auto;padding-top:0px;background:#D9F3F8 url(images/bg-extras.gif) repeat-y;}
+	#extras-wrapper{float:left;width:100%}
+	#extras-column-one{margin-right: 720px;}
+	#extras-column-two{float:left;width:240px;margin-left:-720px;}
+	#extras-column-three{float:left;width:240px;margin-left:-480px;}
+	#extras-column-four{float:left;width:240px;margin-left:-240px;}
+	#extras-footer{clear:left;width:100%}
+#footer{clear:both;background-color:#CAE6EB;}
+
+
+/*
+Header
+*/
+
+#header .logo{float:left;padding:30px 10px 10px 100px;margin:16px 0 0 20px;background:transparent url(images/tree.gif) no-repeat;height:165px;}
+#header h1{margin-bottom:4px;font-size:160%;}
+	#header h1 a, #header h1 a:link{color:#0E6244;}
+#header .description{font-size:80%;}
+#header .banner{float:right;text-align: right;padding:8px 20px 0 0;}
+
+/*
+Navbar
+*/
+
+#navbar{font-size:76%;padding-top:74px;padding-left:4px;color:#6ABD6D;}
+#navlist a, #navlist a:link {color:#6ABD6D;}
+#navlist a:hover{color:#990000;}
+#navlist
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+#navlist li
+{
+display: inline;
+padding: 0;
+margin: 0;
+}
+
+#navlist li:before { content: "| "; }
+#navlist li:first-child:before { content: ""; }
+
+/*IE workaround*/
+/*All IE browsers*/
+* html #navlist li
+{
+border-left: 1px solid #6ABD6D;
+padding: 0 0.4em 0 0.4em;
+margin: 0 0.4em 0 -0.4em;
+}
+
+/*Win IE browsers - hide from Mac IE\*/
+* html #navlist { height: 1%; }
+
+* html #navlist li
+{
+display: block;
+float: left;
+}
+
+/*End hide*/
+/*Mac IE 5*/
+* html #navlist li:first-child { border-left: 0; }
+
+/*
+Posts
+*/
+
+#posts{padding:0px 20px 10px 20px;}
+.post-date{text-transform:uppercase;color:#666;}
+.post-title{font-size:240%;margin-bottom:0;}
+	.post-title a, .post-title a:link{color:#990000;}
+	.post-title a:hover{color:#0E6244;text-decoration:none;}
+	.single .post-meta{margin-bottom:10px;padding-top:0}
+.post-meta{font-size:82%;padding-bottom:10px;color:#666;}
+.post-comment-count{font-size:82%;}
+	.post-comment-count span{}
+.post-body{padding-bottom:10px;font-size:90%;}
+	.post-body ul, .post-body ol{margin-left:20px;padding-left:10px;}
+.post-navigation{overflow:auto;font-size:90%;padding-top:8px;}
+
+/*
+Page Links
+*/
+
+#page-links{font-size:80%;padding-bottom:10px;}
+#page-links a, #page-links a:link{background-color:#CAE6EB;border:1px solid #ccc;padding: 2px 4px 2px 4px;margin: 2px;text-decoration: none; }
+#page-links a:hover{background-color:#0E6244;color:#fff;}
+
+/*
+Comments
+*/
+
+.comments{margin-top:20px;}
+.comments ol{list-style: none;padding-left:0;margin-left:0;}
+.comments h4{font-weight:bold;}
+.comments h3{font-weight:bold;border-top:1px solid #666;padding-top:10px;}
+#commentlist li{border-top:1px solid #ccc;padding:10px;}
+	.postcomment {background-color:#bcdde3;padding:10px;margin-top:4px;overflow:auto;color:#333;}
+	.comment-author{color:#666;font-size:100%;}
+	.comment-date{color:#666;font-size:90%;text-align:right;}
+	.avatar{float:left;padding:4px;margin-right:10px;background-color:#fff;border:1px solid #ccc;}
+
+/*
+Sidebar
+*/
+
+#sidebar{font-size:70%;}
+#sidebar ul{list-style:circle;margin-left:14px;}
+#sidebar ol{padding-left:10px;}
+#sidebar h3{margin-bottom:10px;margin-top:16px;font-size:120%;font-weight:bold;}
+#sidebar h4{margin-bottom:8px;}
+#sidebar .content{background:transparent url(images/mistletoe.gif) top right no-repeat;padding:10px;margin:0 10px 0 10px;}
+/*
+Extras
+*/
+
+#extras .content{padding:30px 10px 10px 10px;margin:10px;font-size:70%;}
+#extras h3{font-size:130%;color:#333;}
+#extras ul{list-style: circle;}
+#extras li {margin-left:14px;}
+#extras select{margin-bottom:8px;}
+
+#extras-column-one{background:transparent url(images/santa.gif) top left no-repeat;}
+	#extras-column-one h3{font-weight:bold;}
+
+/*
+Footer
+*/
+
+#footer{font-size:70%;padding:8px;text-align: center;color:#666;}
+#footer a, #footer a:link{color:#999;}
+#footer a:hover{color:#990000;text-decoration: underline;}
+
+/*
+Search
+*/
+
+.search-form{}
+.search-form form{}
+
+/*
+Wordpress Stuff
+*/
+
+.aligncenter,
+div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.wp-caption {
+   border: 1px solid #ddd;
+   text-align: center;
+   background-color: #f3f3f3;
+   padding-top: 4px;
+   margin: 10px;
+   /* optional rounded corners for browsers that support it */
+   -moz-border-radius: 3px;
+   -khtml-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+}
+
+.wp-caption img {
+   margin: 0;
+   padding: 0;
+   border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+   font-size: 70%;
+   line-height: 17px;
+   padding: 0 4px 5px;
+   margin: 0;
+}
+
+/*
+Calendar Styling
+*/
+
+    table#wp-calendar
+    {
+       border:1px solid #cccccc;
+    }
+    tbody .pad
+    {
+       background-color:#dddddd;
+    }
+    #wp-calendar caption{font-size:120%;}
+    table#wp-calendar>tbody>tr>td>a
+    {
+       font-weight:bold;
+    }
+    thead>tr>th
+    {
+       width:20px;
+       height:20px;
+       text-align:center;
+       background-color:#cdd5de;
+       border:1px solid #cccccc;
+    }
+    tbody>tr>td
+    {
+       width:20px;
+       height:20px;
+       text-align:center;
+       border:1px solid #cccccc;
+    }
+    tfoot>tr>td>a, tfoot>tr>td>a:link, tfoot>tr>td>a:visited, tfoot>tr>td>a:hover, tfoot>tr>td>a:active
+    {
+       font-weight:bold;
+       font-size:100%;
+       height:20px;
+    }
+    tfoot>tr>td#prev
+    {
+       width:58px;
+       height:20px;
+       text-align:left;
+       background-color:#ffffff;
+    }
+    tfoot>tr>td#next
+    {
+       width:58px;
+       height:20px;
+       text-align:right;
+       background-color:#ffffff;
+    }
+

@@ -1,0 +1,103 @@
+/*
+Theme Name: [My Test Theme]
+Theme URI: [The theme website]
+Description: [A description]
+Author: [Your name]
+Author URI: [Your website]
+.
+[Any other comments]
+.
+*/
+
+*{
+margin: 0;
+padding: 0;
+}
+
+a:link{
+text-decoration: none;
+}
+
+#main_menu
+{
+
+width: 100%;
+float:left;
+
+}
+
+
+ul
+{
+list-style: none;
+padding: 0 11px;
+
+}
+
+#main_menu ul li
+{
+float: left;
+padding: 0 1px 0 0;
+
+
+}
+
+
+#main_menu a:link
+{
+color: white;
+display: block;
+line-height: 33px;
+background: url(images/mm_lk_middle.gif) 0 -33px ;
+font-size: 13px;
+font-weight: bold;
+color: #fff;
+
+
+}
+
+
+#main_menu a:hover
+{
+background-position: 0 -66px;
+}
+
+#main_menu span
+{
+display: block;
+background: url(images/mm_lk_left.gif) no-repeat 0 -33px ;
+
+
+}
+
+#main_menu span span
+{
+display: block;
+background: url(images/mm_lk_right.gif) no-repeat right -33px ;
+padding: 0px 13px;
+
+
+}
+
+#main_menu span span:hover 
+{
+background-position: right -66px;
+}
+#main_menu  span:hover 
+{
+background-position: 0 -66px;
+}
+
+#main_menu a.selected:link
+{
+background-position: 0 0;
+}
+
+#main_menu a.selected:link span
+{
+background-position: 0 0;
+}
+#main_menu a.selected:link span span
+{
+background-position: right 0;
+}
